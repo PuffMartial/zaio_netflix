@@ -1,0 +1,369 @@
+
+@media screen and (min-width: 600px) {
+	.membership__btn {
+		font-size: 2rem;
+	}
+
+	.story__card__left h1 {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+	}
+
+	.story__card__left h2 {
+		font-size: 2.2rem;
+	}
+
+	.tv__anime__container {
+		width: 50rem;
+		height: 38rem;
+	}
+
+	.tv__anime {
+		top: 3.5rem;
+		left: 6.6rem;
+		width: 37rem;
+		height: 29.5rem;
+	}
+
+	.faq__title {
+		font-size: 3.5rem;
+	}
+
+	.footer__link__container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.footer__link {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.banner__title {
+		font-size: 5rem;
+	}
+	.banner__subtitle {
+		font-size: 2rem;
+	}
+
+	.membership__form {
+		grid-template-columns: 70% 1fr;
+	}
+
+	.membership__input__message {
+		grid-row: 2;
+	}
+
+	.membership__btn {
+		justify-self: start;
+	}
+
+	.story__card {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+
+	.story__card__left {
+		text-align: left;
+	}
+
+	.accordion__list {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.story__card__left h1 {
+		font-size: 5rem;
+	}
+
+	.story__card__left h2 {
+		font-size: 2.5rem;
+	}
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  body {
+    font-family: "Open-Sans", sans-serif;
+  }
+  /* Fonts */
+  .card-title {
+    font-size: 3.125rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  .card-subtitle {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  .email-form-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+  /* BANNER WRAP SECTION */
+  .banner-wrap {
+    background-image: url(./assets/bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 10px solid #222222;
+    position: relative;
+    z-index: 1;
+  }
+  .overlay {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 60%;
+    position: absolute;
+    top: 0;
+  }
+  .navbar {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin: 0px 45px;
+    padding-top: 45px;
+  }
+  .navbar > img {
+    height: 32px;
+  }
+  .navbar > a {
+    padding: 7px 17px;
+    color: white;
+    background: red;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  .banner-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 45px);
+    text-align: center;
+  }
+  .get-started-form {
+    height: 60px;
+    display: flex;
+  }
+  .get-started-form input {
+    height: 100%;
+    width: 450px;
+    padding-left: 10px;
+  }
+  .get-started-form button {
+    background-color: red;
+    color: white;
+    height: 100%;
+    font-size: 1.625rem;
+    border: none;
+    min-height: 60px;
+    padding: 0 26px;
+    border-left: 1px solid;
+  }
+  .info-container {
+    background: black;
+    color: white;
+    display: flex;
+    padding: 70px 45px;
+    border-bottom: 10px solid #222222;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tv-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tv-container img {
+    z-index: 1;
+  }
+  .tv-container video {
+    position: absolute;
+  }
+  /* FOOTER STYLES */
+  .footer {
+    background: black;
+  }
+  .footer-items {
+    margin: 0 47.5px;
+    padding: 70px 45px;
+  }
+  .footer-top {
+    margin-bottom: 30px;
+  }
+  .footer ul li,
+  .questions-title {
+    color: #757575;
+  }
+  .footer-links li {
+    font-size: 13px;
+    line-height: 2;
+  }
+  .footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .questions-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .footer-links {
+    list-style-type: none;
+    columns: 4;
+    padding: 0;
+  }
+  
+
+
+  .story__card {
+    padding: 5rem 5%;
+    display: grid;
+    grid-row-gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: black;
+  }
+  
+  .story__card__left {
+    text-align: center;
+  }
+  
+  .story__card__left h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  .story__card__left h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .story__card__right {
+    display: grid;
+    place-items: center;
+  }
+  
+  .tv__anime__container {
+    width: 30rem;
+    height: 23.4rem;
+    position: relative;
+  }
+  
+  .tv__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  .tv__anime {
+    position: absolute;
+    top: 0.8rem;
+    left: 4rem;
+    width: 22.1rem;
+    height: 21rem;
+  }
+  
+  .download__container {
+    position: relative;
+  }
+  
+  .download__container img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .download__animation__container {
+    display: grid;
+    grid-template-columns: 4rem 1fr 5rem;
+    width: 60%;
+    height: 8rem;
+    padding: 1rem;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    background: black;
+  }
+  
+  .download__animation__container .poster {
+    height: 90%;
+  }
+  .download__animation__container .download__gif {
+    height: 90%;
+  }
+  
+  .download__animation__container .text__container .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .download__animation__container .text__container .downloading {
+    font-size: 1.2rem;
+    color: #0071eb;
+  }
+  
+  .download__animation__container .text__container {
+    padding-left: 2rem;
+  }
+  
+  .kids__image {
+    width: 100%;
+  }
+  .language {
+    height: 53px;
+    width: 142px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #999999;
+    padding: 0 10px;
+    margin-top: 30px;
+    border-radius: 3px;
+  }
+  .language select {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    appearance: none;
+    background: black;
+    color: #999999;
+    background: url(./assets/carot.png) no-repeat 100%;
+  }
+  .footer-country {
+    font-size: 13px;
+    margin-top: 24px;
+    color: #757575;
+  }
+  .test {
+    display: none;
+  }
+  
